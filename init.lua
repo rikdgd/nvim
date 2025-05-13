@@ -1,3 +1,5 @@
+require("keymaps")
+
 -- INSTALL THE "lazy.nvim" PACKAGE MANAGER:
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -99,10 +101,6 @@ require("lazy").setup({
 
 
 -- VIM EDITOR SETTINGS:
-vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>",  { desc = "Explorer Toggle" })
-vim.keymap.set("n", "<leader>f", ":NvimTreeFindFile<CR>", { desc = "Find current file in Tree" })
-
 local opt = vim.opt
 
 opt.number = true
