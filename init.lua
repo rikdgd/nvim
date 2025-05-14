@@ -61,11 +61,10 @@ require("lazy").setup({
                 },
             },
             view = {
-                width = 30,
+                width = 40,
                 side  = "left",
             },
             })
-
             
         end,
     },
