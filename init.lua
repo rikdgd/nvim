@@ -14,19 +14,14 @@ vim.opt.runtimepath:prepend(lazypath)
 
 -- PLUGIN SETUP USING "Lazy":
 require("lazy").setup({
-    {
-        "Shatur/neovim-ayu",
-        name     = "ayu",
-        lazy     = false,
+    { 
+        "catppuccin/nvim",
+        name = "catppuccin",
+        lazy = false,
         priority = 1000,
-        config   = function()
-        require("ayu").setup({
-            mirage   = true,
-            terminal = true,       -- let terminal colors inherit
-            overrides = {},
-        })
-        vim.cmd("colorscheme ayu")
-        end,
+        config = function()
+            vim.cmd("colorscheme catppuccin-macchiato")
+        end
     },
     {
         "nvim-telescope/telescope.nvim",
